@@ -1,15 +1,19 @@
 package set_get;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class TestClass05 {
+	private HashMap<String,String> login = new HashMap<>();
 	private ArrayList<String> id = new ArrayList<>();
 	private ArrayList<String> pwd = new ArrayList<>(); 
 	private String inputId, inputPwd;
 	
 	
 	public void setId(ArrayList<String> id) {
+		
+		id.add(inputId);
 		this.id = id;
 	}
 	public ArrayList<String> getId() {
